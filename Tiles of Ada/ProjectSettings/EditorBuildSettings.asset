@@ -6,7 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Levels/MainMenu.unity
+    path: Assets/Levels/TitlePage.unity
+    guid: caf9bdb37d1254e6ebadddac0b37fd08
+  - enabled: 1
+    path: Assets/Levels/StartGame.unity
     guid: 1105ee3ada26348e9969e70a47593b06
   - enabled: 1
     path: Assets/Levels/Level1.unity
@@ -17,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Levels/WinnerScreen.unity
     guid: ac57623f3fa914db29f98ee5f1a40726
+  - enabled: 1
+    path: Assets/Levels/LoserScreen.unity
+    guid: d7bf10a523c5a492d8abc04b40a8820e
   m_configObjects: {}

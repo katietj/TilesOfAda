@@ -21,7 +21,7 @@ TagManager:
   - Enemy
   - Hazards
   - Interactables
-  - 
+  - Platforms
   - 
   - 
   - 
@@ -50,6 +50,9 @@ TagManager:
     locked: 0
   - name: Enemy
     uniqueID: 646765915
+    locked: 0
+  - name: Platforms
+    uniqueID: 2927433163
     locked: 0
   - name: Hazards
     uniqueID: 3251594233

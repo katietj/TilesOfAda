@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     [SerializeField] float jumpSpeed = 5f;
     [SerializeField] float climbSpeed = 5f;
     [SerializeField] Vector2 deathKick = new Vector2(25f, 25f);
+    //[SerializeField] GameObject blockSparklesVFX;
 
 
     //state
@@ -63,13 +64,29 @@ public class Player : MonoBehaviour
         {
             return;
         }
+        
 
         if (CrossPlatformInputManager.GetButtonDown("Jump"))
         {
+            //TriggerSparklesVFX();
             Vector2 jumpVelocityAdd = new Vector2(0f, jumpSpeed);
             myRigidBody.velocity += jumpVelocityAdd;
+         
+
         }
+
+
     }
+
+    //private void TriggerSparklesVFX()
+    //{
+    //    if (myBodyCollider2D.IsTouchingLayers(LayerMask.GetMask("Platforms")))
+    //    {
+    //        GameObject sparkles = Instantiate(blockSparklesVFX, transform.position, transform.rotation);
+
+    //        Destroy(sparkles, 1f);
+    //    }
+    //}
 
     private void Die()
     {
@@ -79,6 +96,7 @@ public class Player : MonoBehaviour
             myAnimator.SetTrigger("Dying");
             GetComponent<Rigidbody2D>().velocity = deathKick;
             FindObjectOfType<GameSession>().ProcessPlayerDeath();
+
         }
     }
 

@@ -10,7 +10,8 @@ public class GameSession : MonoBehaviour {
     [SerializeField] int playerLives = 3;
     [SerializeField] int score = 0;
     [SerializeField] Text livesText;
-    [SerializeField] Text scoreText; 
+    [SerializeField] Text scoreText;
+    public GameObject heart1, heart2, heart3;
 
     private void Awake()
     {
@@ -35,6 +36,7 @@ public class GameSession : MonoBehaviour {
     void Start () {
         livesText.text = playerLives.ToString();
         scoreText.text = score.ToString();
+        HeartCount();
 	}
 	
 	public void ProcessPlayerDeath()
@@ -54,14 +56,50 @@ public class GameSession : MonoBehaviour {
     private void TakeLife()
     {
         playerLives--;
+        HeartCount();
         var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex);
         livesText.text = playerLives.ToString();
+
+    }
+
+    public void HeartCount()
+    {
+        if (playerLives > 3)
+            playerLives = 3;
+
+        switch (playerLives)
+        {
+            case 3:
+                heart1.gameObject.SetActive(true);
+                heart2.gameObject.SetActive(true);
+                heart3.gameObject.SetActive(true);
+                break;
+
+            case 2:
+                heart1.gameObject.SetActive(true);
+                heart2.gameObject.SetActive(true);
+                heart3.gameObject.SetActive(false);
+                break;
+
+            case 1:
+                heart1.gameObject.SetActive(true);
+                heart2.gameObject.SetActive(false);
+                heart3.gameObject.SetActive(false);
+                break;
+
+            case 0:
+                heart1.gameObject.SetActive(false);
+                heart2.gameObject.SetActive(false);
+                heart3.gameObject.SetActive(false);
+                break;
+
+        }
     }
 
     private void ResetGameSession()
     {
-        SceneManager.LoadScene(0); // change this to go to loooser page
+        SceneManager.LoadScene(5); // change this to go to loooser page
         Destroy(gameObject);
     }
 }

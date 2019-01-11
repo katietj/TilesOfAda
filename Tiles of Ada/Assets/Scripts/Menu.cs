@@ -5,8 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour {
 
-	public void StartFirstLevel()
+    public void VeryBegining()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void StartScreen()
     {
         SceneManager.LoadScene(1);
+    }
+
+    public void StartFirstScene()
+    {
+        SceneManager.LoadScene(2);
     }
 }
