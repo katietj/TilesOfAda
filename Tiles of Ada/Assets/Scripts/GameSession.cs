@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro; 
 
 public class GameSession : MonoBehaviour {
 
 
     [SerializeField] int playerLives = 3;
     [SerializeField] int score = 0;
-    [SerializeField] Text livesText;
-    [SerializeField] Text scoreText;
-    public GameObject heart1, heart2, heart3;
+    [SerializeField] TextMeshProUGUI livesText;
+    [SerializeField] TextMeshProUGUI scoreText;
 
     private void Awake()
     {
@@ -23,8 +23,12 @@ public class GameSession : MonoBehaviour {
         else
         {
             DontDestroyOnLoad(gameObject);
+           
         }
     }
+
+
+
 
     public void AddToScore( int pointsToAdd)
     {
@@ -36,7 +40,7 @@ public class GameSession : MonoBehaviour {
     void Start () {
         livesText.text = playerLives.ToString();
         scoreText.text = score.ToString();
-        HeartCount();
+
 	}
 	
 	public void ProcessPlayerDeath()
@@ -56,50 +60,33 @@ public class GameSession : MonoBehaviour {
     private void TakeLife()
     {
         playerLives--;
-        HeartCount();
         var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex);
         livesText.text = playerLives.ToString();
 
     }
 
-    public void HeartCount()
+    private void Update()
     {
-        if (playerLives > 3)
-            playerLives = 3;
-
-        switch (playerLives)
+        var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        if (currentSceneIndex == 4)
         {
-            case 3:
-                heart1.gameObject.SetActive(true);
-                heart2.gameObject.SetActive(true);
-                heart3.gameObject.SetActive(true);
-                break;
-
-            case 2:
-                heart1.gameObject.SetActive(true);
-                heart2.gameObject.SetActive(true);
-                heart3.gameObject.SetActive(false);
-                break;
-
-            case 1:
-                heart1.gameObject.SetActive(true);
-                heart2.gameObject.SetActive(false);
-                heart3.gameObject.SetActive(false);
-                break;
-
-            case 0:
-                heart1.gameObject.SetActive(false);
-                heart2.gameObject.SetActive(false);
-                heart3.gameObject.SetActive(false);
-                break;
-
+            Destroy(gameObject);
         }
     }
 
+
+
     private void ResetGameSession()
     {
-        SceneManager.LoadScene(5); // change this to go to loooser page
+      
+        SceneManager.LoadScene(5); 
         Destroy(gameObject);
     }
+
+
+
+
+
+
 }

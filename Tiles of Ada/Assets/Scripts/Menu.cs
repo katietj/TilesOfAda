@@ -5,9 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour {
 
+
+
     public void VeryBegining()
     {
+        var oldGame = FindObjectOfType<GameSession>();
+        Destroy(oldGame);
         SceneManager.LoadScene(0);
+
+        
+       
+
     }
 
     public void StartScreen()
