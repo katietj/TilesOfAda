@@ -704,16 +704,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1326103747784156, guid: eb1257dfd4eb74523a4de36121e3d8db, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1535029466213402, guid: eb1257dfd4eb74523a4de36121e3d8db, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 20314380079718636, guid: eb1257dfd4eb74523a4de36121e3d8db,
         type: 2}
       propertyPath: orthographic size
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4963562437737056, guid: eb1257dfd4eb74523a4de36121e3d8db, type: 2}
       propertyPath: m_LocalPosition.x
@@ -725,15 +725,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4053874379316678, guid: eb1257dfd4eb74523a4de36121e3d8db, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 30.39
+      value: -39.18
       objectReference: {fileID: 0}
     - target: {fileID: 4053874379316678, guid: eb1257dfd4eb74523a4de36121e3d8db, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.29
+      value: 0.47
       objectReference: {fileID: 0}
     - target: {fileID: 4053874379316678, guid: eb1257dfd4eb74523a4de36121e3d8db, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb1257dfd4eb74523a4de36121e3d8db, type: 2}
@@ -835,11 +835,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4164230954161478, guid: fd6ee4e0a3cd7404199520b7a40e6f67, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 187.2
+      value: 187.42
       objectReference: {fileID: 0}
     - target: {fileID: 4164230954161478, guid: fd6ee4e0a3cd7404199520b7a40e6f67, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.3
+      value: -0.19
       objectReference: {fileID: 0}
     - target: {fileID: 4164230954161478, guid: fd6ee4e0a3cd7404199520b7a40e6f67, type: 2}
       propertyPath: m_LocalPosition.z
@@ -10660,7 +10660,7 @@ GameObject:
   - component: {fileID: 785432959}
   - component: {fileID: 785432958}
   m_Layer: 11
-  m_Name: feminism-drawing-sketch-5
+  m_Name: AdaImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11933,7 +11933,7 @@ GameObject:
   - component: {fileID: 1671151232}
   - component: {fileID: 1671151231}
   m_Layer: 11
-  m_Name: feminism-drawing-sketch-5 (2)
+  m_Name: AdaImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12199,6 +12199,26 @@ Prefab:
       propertyPath: jumpSpeed
       value: 32
       objectReference: {fileID: 0}
+    - target: {fileID: 70608131763495290, guid: 712e15f1deea44e0b91b11686cbacd03,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: 0.0141332
+      objectReference: {fileID: 0}
+    - target: {fileID: 70608131763495290, guid: 712e15f1deea44e0b91b11686cbacd03,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: 0.5836015
+      objectReference: {fileID: 0}
+    - target: {fileID: 70608131763495290, guid: 712e15f1deea44e0b91b11686cbacd03,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 1.2710742
+      objectReference: {fileID: 0}
+    - target: {fileID: 70608131763495290, guid: 712e15f1deea44e0b91b11686cbacd03,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 1.5103856
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 712e15f1deea44e0b91b11686cbacd03, type: 2}
   m_IsPrefabAsset: 0
@@ -12211,8 +12231,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1791606840}
   - component: {fileID: 1791606839}
-  m_Layer: 11
-  m_Name: pixel-speech-bubble (9)
+  m_Layer: 5
+  m_Name: Ada Brain Quote
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12250,8 +12270,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1198992623
-  m_SortingLayer: 1
+  m_SortingLayerID: -842152829
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4eeae70af717245bc92ffa4cc265364a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -12488,7 +12508,7 @@ GameObject:
   - component: {fileID: 1949986112}
   - component: {fileID: 1949986111}
   m_Layer: 11
-  m_Name: feminism-drawing-sketch-5 (1)
+  m_Name: AdaImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

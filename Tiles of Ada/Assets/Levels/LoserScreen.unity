@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 632196887}
   - component: {fileID: 632196886}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Ada
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -327,6 +327,10 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1398432402771628, guid: eb1257dfd4eb74523a4de36121e3d8db, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb1257dfd4eb74523a4de36121e3d8db, type: 2}
   m_IsPrefabAsset: 0
@@ -341,7 +345,7 @@ GameObject:
   - component: {fileID: 684194840}
   - component: {fileID: 684194839}
   m_Layer: 5
-  m_Name: TextMeshPro Text
+  m_Name: playAgainText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -568,7 +572,7 @@ GameObject:
   - component: {fileID: 710860847}
   - component: {fileID: 710860846}
   m_Layer: 5
-  m_Name: TextMeshPro Text
+  m_Name: Loser Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -926,8 +930,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000090599, y: 0.0020056}
-  m_SizeDelta: {x: 800, y: 394}
+  m_AnchoredPosition: {x: -5.4, y: -3.5}
+  m_SizeDelta: {x: 872.8, y: 465.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1511191801
 MonoBehaviour:

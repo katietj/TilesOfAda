@@ -193,7 +193,7 @@ GameObject:
   - component: {fileID: 142093138}
   - component: {fileID: 142093137}
   m_Layer: 5
-  m_Name: TextMeshPro Text
+  m_Name: playAgain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1633,7 +1633,7 @@ GameObject:
   - component: {fileID: 1850370340}
   - component: {fileID: 1850370339}
   m_Layer: 5
-  m_Name: Image
+  m_Name: WinnerText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

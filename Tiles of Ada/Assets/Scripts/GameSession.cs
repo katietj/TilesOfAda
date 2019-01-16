@@ -12,6 +12,7 @@ public class GameSession : MonoBehaviour {
     [SerializeField] int score = 0;
     [SerializeField] TextMeshProUGUI livesText;
     [SerializeField] TextMeshProUGUI scoreText;
+    [SerializeField] float LevelLoadDelay = 1f;
 
     private void Awake()
     {
@@ -60,11 +61,23 @@ public class GameSession : MonoBehaviour {
     private void TakeLife()
     {
         playerLives--;
-        var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(currentSceneIndex);
+        StartCoroutine(LoadLevel());
         livesText.text = playerLives.ToString();
 
     }
+
+
+    IEnumerator LoadLevel()
+    {
+
+        yield return new WaitForSecondsRealtime(LevelLoadDelay);
+        Time.timeScale = 1f;
+
+        var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex);
+    }
+
+
 
     private void Update()
     {

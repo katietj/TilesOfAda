@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1929854780031632}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 32.51, y: -5.06, z: 0}
+  m_LocalPosition: {x: 69.546, y: 0.473, z: 0}
   m_LocalScale: {x: 1.054, y: 0.887, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -76,8 +76,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.063976705, y: 0.84442157}
-  m_Size: {x: 1.5893588, y: 2.1747622}
+  m_Offset: {x: -0.010966349, y: 0.48915696}
+  m_Size: {x: 0.7690922, y: 1.119437}
   m_Direction: 0
 --- !u!95 &95656015659632036
 Animator:
@@ -111,8 +111,8 @@ MonoBehaviour:
   runSpeed: 5
   jumpSpeed: 35
   climbSpeed: 5
-  deathKick: {x: 10, y: 25}
-  blockSparklesVFX: {fileID: 0}
+  deathKick: {x: 25, y: 25}
+  blockSparklesVFX: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 2}
 --- !u!212 &212987905770737942
 SpriteRenderer:
   m_ObjectHideFlags: 1

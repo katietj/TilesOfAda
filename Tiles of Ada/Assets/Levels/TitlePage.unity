@@ -420,7 +420,7 @@ GameObject:
   - component: {fileID: 574179943}
   - component: {fileID: 574179942}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Ada
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -865,7 +865,7 @@ GameObject:
   - component: {fileID: 709119336}
   - component: {fileID: 709119339}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Start Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1086,7 +1086,7 @@ GameObject:
   - component: {fileID: 1000020589}
   - component: {fileID: 1000020588}
   m_Layer: 5
-  m_Name: TextMeshPro Text
+  m_Name: Title Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
