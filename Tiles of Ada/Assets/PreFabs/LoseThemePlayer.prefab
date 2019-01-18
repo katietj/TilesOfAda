@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4090882734819184}
   - component: {fileID: 82786214869522372}
+  - component: {fileID: 114316495799104204}
   m_Layer: 0
   m_Name: LoseThemePlayer
   m_TagString: Untagged
@@ -135,3 +136,14 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &114316495799104204
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1651477969320672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b26de31fb46b43139b92a2e4d06db30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

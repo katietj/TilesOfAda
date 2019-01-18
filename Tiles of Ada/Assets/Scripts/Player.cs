@@ -22,7 +22,6 @@ public class Player : MonoBehaviour
     Animator myAnimator;
     Rigidbody2D myRigidBody;
     CapsuleCollider2D myBodyCollider2D;
-    BoxCollider2D myFeet; 
     float gravityScaleAtStart;
 
     // Use this for initialization

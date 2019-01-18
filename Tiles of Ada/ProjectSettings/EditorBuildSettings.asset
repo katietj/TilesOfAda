@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Levels/LoserScreen.unity
     guid: d7bf10a523c5a492d8abc04b40a8820e
+  - enabled: 1
+    path: Assets/Levels/Options.unity
+    guid: 8e192fd94e6d047abb10419bc39e5357
   m_configObjects: {}
