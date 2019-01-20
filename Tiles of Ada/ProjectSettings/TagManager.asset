@@ -63,6 +63,9 @@ TagManager:
   - name: Interactables
     uniqueID: 1943638131
     locked: 0
+  - name: Ice
+    uniqueID: 2342043101
+    locked: 0
   - name: Foreground
     uniqueID: 2772756941
     locked: 0

@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     [SerializeField] float climbSpeed = 5f;
     [SerializeField] Vector2 deathKick = new Vector2(25f, 25f);
     [SerializeField] GameObject blockSparklesVFX;
+    public float thrust;
 
 
     //state
@@ -43,6 +44,7 @@ public class Player : MonoBehaviour
         Jump();
         ClimbLadder();
         Die();
+        //Slide();
 
     }
     private void Run()
@@ -129,4 +131,19 @@ public class Player : MonoBehaviour
 
         myAnimator.SetBool("Climbing", playerVerticalSpeed);
     }
-}
+
+    //private void Slide()
+    //{
+
+        //if (myBodyCollider2D.IsTouchingLayers(LayerMask.GetMask("Ground")))
+        //{
+
+
+        //        myRigidBody.AddForce(Vector2.right * 100);
+
+
+
+        //    }
+
+        //}
+    }
