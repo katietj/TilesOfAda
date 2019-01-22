@@ -725,11 +725,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4053874379316678, guid: eb1257dfd4eb74523a4de36121e3d8db, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 41.69227
+      value: -11.903894
       objectReference: {fileID: 0}
     - target: {fileID: 4053874379316678, guid: eb1257dfd4eb74523a4de36121e3d8db, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.1605418
+      value: 0.5161568
       objectReference: {fileID: 0}
     - target: {fileID: 4053874379316678, guid: eb1257dfd4eb74523a4de36121e3d8db, type: 2}
       propertyPath: m_LocalPosition.z
@@ -10946,7 +10946,7 @@ GameObject:
   m_Component:
   - component: {fileID: 785432959}
   - component: {fileID: 785432958}
-  m_Layer: 11
+  m_Layer: 9
   m_Name: AdaImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10985,8 +10985,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1198992623
-  m_SortingLayer: 1
+  m_SortingLayerID: 858292125
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1ca8c7ce6c28341f282583ab4945f437, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -12240,7 +12240,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1671151232}
   - component: {fileID: 1671151231}
-  m_Layer: 11
+  m_Layer: 9
   m_Name: AdaImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12279,8 +12279,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1198992623
-  m_SortingLayer: 1
+  m_SortingLayerID: 858292125
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1ca8c7ce6c28341f282583ab4945f437, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -12539,7 +12539,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1791606840}
   - component: {fileID: 1791606839}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Ada Brain Quote
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12578,8 +12578,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -842152829
-  m_SortingLayer: 10
+  m_SortingLayerID: 858292125
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4eeae70af717245bc92ffa4cc265364a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -12815,7 +12815,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1949986112}
   - component: {fileID: 1949986111}
-  m_Layer: 11
+  m_Layer: 9
   m_Name: AdaImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12854,8 +12854,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1198992623
-  m_SortingLayer: 1
+  m_SortingLayerID: 858292125
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1ca8c7ce6c28341f282583ab4945f437, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
