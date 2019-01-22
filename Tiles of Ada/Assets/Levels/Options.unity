@@ -517,8 +517,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -486, y: 171}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -473, y: 197}
+  m_SizeDelta: {x: 127.8, y: 26.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &567050542
 MonoBehaviour:
@@ -1999,7 +1999,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7, y: -7}
+  m_AnchoredPosition: {x: 0, y: -7}
   m_SizeDelta: {x: 311.6, y: 58.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1421099485
@@ -2404,7 +2404,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.804
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -2453,7 +2453,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 139, y: -132}
+  m_AnchoredPosition: {x: 128, y: -119}
   m_SizeDelta: {x: 522, y: 56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1834740379
@@ -2478,9 +2478,7 @@ MonoBehaviour:
   m_text: 'Music by SketchyLogic
 
     Assets created by : Zilo Media, Marta Maksymiec, Kenney, Mercyssh, Liz Rush, qubodup,
-    Marta Nowaczyk, Indiependent Fish
-
-    Made with help from Gamedev.tv
+    Marta Nowaczyk, Indiependent Fish, Gamedev.tv
 
     For details see katietj/TilesOfAda on Git Hub'
   m_isRightToLeft: 0
@@ -2528,7 +2526,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 173
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -2551,12 +2549,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: -20.112059, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1834740379}
-    characterCount: 218
+    characterCount: 199
     spriteCount: 0
-    spaceCount: 31
-    wordCount: 33
+    spaceCount: 27
+    wordCount: 29
     linkCount: 0
-    lineCount: 5
+    lineCount: 4
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
@@ -2616,8 +2614,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 75, y: -3}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 46.8, y: -47.6}
+  m_SizeDelta: {x: 157, y: 31.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2013985392
 MonoBehaviour:

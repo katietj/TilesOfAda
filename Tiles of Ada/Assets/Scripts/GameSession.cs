@@ -82,7 +82,7 @@ public class GameSession : MonoBehaviour {
     private void Update()
     {
         var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        if (currentSceneIndex == 4)
+        if (currentSceneIndex == 5)
         {
             Destroy(gameObject);
         }
@@ -93,7 +93,7 @@ public class GameSession : MonoBehaviour {
     private void ResetGameSession()
     {
       
-        SceneManager.LoadScene(5); 
+        SceneManager.LoadScene(6); 
         Destroy(gameObject);
     }
 

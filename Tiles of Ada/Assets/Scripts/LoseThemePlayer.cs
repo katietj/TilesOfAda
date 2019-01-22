@@ -30,7 +30,7 @@ public class LoseThemePlayer : MonoBehaviour
             var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
             if (currentSceneIndex == 0)
             {
-                Debug.Log("i am dead");
+                
                 Destroy(gameObject);
 
             }

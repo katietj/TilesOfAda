@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Levels/Level2.unity
     guid: b309a4ecde20647ecbc1822680fc08d9
   - enabled: 1
+    path: Assets/Levels/Level3.unity
+    guid: 4cf32fa1ac55041fda1c306b9c66d78e
+  - enabled: 1
     path: Assets/Levels/WinnerScreen.unity
     guid: ac57623f3fa914db29f98ee5f1a40726
   - enabled: 1

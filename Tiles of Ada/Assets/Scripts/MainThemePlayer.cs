@@ -40,9 +40,9 @@ public class MainThemePlayer : MonoBehaviour {
     {
        
         var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        if (currentSceneIndex == 4 || currentSceneIndex == 5)
+        if (currentSceneIndex == 5 || currentSceneIndex == 6)
         {
-            Debug.Log("i am here");
+
             Destroy(gameObject);
 
         }

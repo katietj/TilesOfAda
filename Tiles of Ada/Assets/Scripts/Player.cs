@@ -10,10 +10,9 @@ public class Player : MonoBehaviour
     //config
     [SerializeField] float runSpeed = 5f;
     [SerializeField] float jumpSpeed = 5f;
-    [SerializeField] float climbSpeed = 5f;
     [SerializeField] Vector2 deathKick = new Vector2(25f, 25f);
-    [SerializeField] GameObject blockSparklesVFX;
-    public float thrust;
+  
+
 
 
     //state
@@ -42,9 +41,8 @@ public class Player : MonoBehaviour
         Run();
         FlipPlayer();
         Jump();
-        ClimbLadder();
         Die();
-        //Slide();
+        Slide();
 
     }
     private void Run()
@@ -69,7 +67,7 @@ public class Player : MonoBehaviour
 
         if (CrossPlatformInputManager.GetButtonDown("Jump"))
         {
-            TriggerSparklesVFX();
+           
             Vector2 jumpVelocityAdd = new Vector2(0f, jumpSpeed);
             myRigidBody.velocity += jumpVelocityAdd;
          
@@ -79,15 +77,6 @@ public class Player : MonoBehaviour
 
     }
 
-    private void TriggerSparklesVFX()
-    {
-        if (myBodyCollider2D.IsTouchingLayers(LayerMask.GetMask("Platforms")))
-        {
-            GameObject sparkles = Instantiate(blockSparklesVFX, transform.position, transform.rotation);
-
-            Destroy(sparkles, 1f);
-        }
-    }
 
     private void Die()
     {
@@ -113,37 +102,20 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void ClimbLadder()
+
+
+    private void Slide()
     {
-        if (!myBodyCollider2D.IsTouchingLayers(LayerMask.GetMask("Climbing")))
+
+        if (myBodyCollider2D.IsTouchingLayers(LayerMask.GetMask("Ice")))
         {
-            myAnimator.SetBool("Climbing", false);
-            myRigidBody.gravityScale = gravityScaleAtStart;
-            return;
+
+
+                myRigidBody.AddForce(Vector2.right * 100);
+
+
+
+            }
+
         }
-
-        float controlThrow = CrossPlatformInputManager.GetAxis("Vertical");
-        Vector2 climbVelocity = new Vector2(myRigidBody.velocity.x, controlThrow * climbSpeed);
-        myRigidBody.velocity = climbVelocity;
-        myRigidBody.gravityScale = 0f;
-
-        bool playerVerticalSpeed = Mathf.Abs(myRigidBody.velocity.y) > Mathf.Epsilon;
-
-        myAnimator.SetBool("Climbing", playerVerticalSpeed);
-    }
-
-    //private void Slide()
-    //{
-
-        //if (myBodyCollider2D.IsTouchingLayers(LayerMask.GetMask("Ground")))
-        //{
-
-
-        //        myRigidBody.AddForce(Vector2.right * 100);
-
-
-
-        //    }
-
-        //}
     }
