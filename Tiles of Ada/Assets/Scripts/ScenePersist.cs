@@ -3,40 +3,46 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ScenePersist : MonoBehaviour {
 
-    int startingSceneIndex; 
+
+public class ScenePersist : MonoBehaviour
+{
+
+    [SerializeField] int liveForScene;
 
     private void Awake()
     {
-        int numScenePersist = FindObjectsOfType<ScenePersist>().Length;
-        if (numScenePersist > 1)
+        ScenePersist[] SPs = FindObjectsOfType<ScenePersist>();
+        liveForScene = SceneManager.GetActiveScene().buildIndex;
+        if (SPs.Length > 1)
         {
-            Destroy(gameObject);
+            if (SPs[0].liveForScene == SPs[1].liveForScene)
+            {
+                print("Destroying duplicate ScenePersist");
+                gameObject.SetActive(false);
+                Destroy(gameObject);
+            }
         }
-        else
+        DontDestroyOnLoad(gameObject);
+    }
+
+    private void Start()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene loadedScene, LoadSceneMode mode)
+    {
+        if (SceneManager.GetActiveScene().buildIndex != liveForScene)
         {
-            DontDestroyOnLoad(gameObject);
+            print("Destroying absolete ScenePersist");
+            Destroy(gameObject);
         }
     }
 
-    // Use this for initialization
-    void Start () {
-        startingSceneIndex = SceneManager.GetActiveScene().buildIndex;
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-       
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-
-        if (currentSceneIndex != startingSceneIndex)
-        {
-            Destroy(gameObject);
-
-        }
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
-
-
 }
+
