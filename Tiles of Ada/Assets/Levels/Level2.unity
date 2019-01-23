@@ -638,24 +638,24 @@ Prefab:
       objectReference: {fileID: 1921519286}
     - target: {fileID: 4053874379316678, guid: eb1257dfd4eb74523a4de36121e3d8db, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -53.059338
+      value: -4.4540863
       objectReference: {fileID: 0}
     - target: {fileID: 4053874379316678, guid: eb1257dfd4eb74523a4de36121e3d8db, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.41491514
+      value: 0.20850372
       objectReference: {fileID: 0}
     - target: {fileID: 1326103747784156, guid: eb1257dfd4eb74523a4de36121e3d8db, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 20314380079718636, guid: eb1257dfd4eb74523a4de36121e3d8db,
         type: 2}
       propertyPath: orthographic size
-      value: 7
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1535029466213402, guid: eb1257dfd4eb74523a4de36121e3d8db, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4053874379316678, guid: eb1257dfd4eb74523a4de36121e3d8db, type: 2}
       propertyPath: m_LocalPosition.z
