@@ -11,6 +11,8 @@ A 2D platformer game with an Ada Academy theme made for Ada Developers Academy C
 ## Screenshots
 
   ![game](Screen1.png)
+  ![game](Screen2.png)
+  ![game](Screen3.png)
     
       
         
